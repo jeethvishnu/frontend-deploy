@@ -25,3 +25,7 @@ variable "zone_name" {
     default = "vjeeth.site"
   
 }
+
+variable "app_version" {
+  
+}
