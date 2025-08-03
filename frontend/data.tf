@@ -11,11 +11,11 @@ data "aws_ssm_parameter" "public_subnet_ids" {
 }
 
 data "aws_ssm_parameter" "vpc_id" {
-  name = "/${var.project}/${var.env}/vpc_ids"
+  name = "/${var.project}/${var.env}/vpc_id"
 }
 
-data "aws_ssm_parameter" "alb_listener_arn" {
-  name = "/${var.project}/${var.env}/alb_listener_arn"
+data "aws_ssm_parameter" "web_alb_listener_arn" {
+  name = "/${var.project}/${var.env}/web_alb_listener_arn"
 }
 
 data "aws_ssm_parameter" "web_alb_listener_arn_https" {
